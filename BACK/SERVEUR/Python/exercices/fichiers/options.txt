@@ -1,0 +1,18 @@
+<option selected="selected" value="">Domaine</option>
+<option value="Accès à la formation"> Accès à la formation</option>
+<option value="Activités de services"> Activités de services</option>
+<option value="Artisanat d'art"> Artisanat d'art</option>
+<option value="Bâtiment"> Bâtiment</option>
+<option value="Commerce - vente - distribution"> Commerce - vente - distribution</option>
+<option value="Compétences clés – CléA"> Compétences clés – CléA</option>
+<option value="Compétences et fonctions transversales"> Compétences et fonctions transversales</option>
+<option value="Efficacité professionnelle et management"> Efficacité professionnelle et management</option>
+<option value="Fonctions supports de l'entreprise"> Fonctions supports de l'entreprise</option>
+<option value="Formations réglementaires"> Formations réglementaires</option>
+<option value="Hôtellerie - restauration - tourisme - loisirs"> Hôtellerie - restauration - tourisme - loisirs</option>
+<option value="Industrie"> Industrie</option>
+<option value="Insertion et de la médiation"> Insertion et de la médiation</option>
+<option value="Réseaux - Télécommunications - Informatique - Numérique"> Réseaux - Télécommunications - Informatique - Numérique</option>
+<option value="Services aux entreprises et à la personne"> Services aux entreprises et à la personne</option>
+<option value="Transports - logistique"> Transports - logistique</option>
+<option value="Travaux publics"> Travaux publics</option>
