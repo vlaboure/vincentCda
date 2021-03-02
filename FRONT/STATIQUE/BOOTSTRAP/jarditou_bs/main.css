@@ -1,0 +1,66 @@
+html{
+    height:100%;
+    margin:0;
+    padding: 0;
+}
+
+.icon{
+    height:70px;
+    max-width: 70px;
+}
+.jaune{
+    background-color: rgb(243, 210, 134);
+}
+body{   
+    margin-right: 0;
+    padding: 10px;
+}
+.image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.droite{
+    background-color: orange;
+}
+td{
+    max-width: 1.8rem;
+}
+.head{
+    height:4rem ;
+    background-color: gray;
+    padding-top:0;
+}
+.promo{
+    
+}
+label{
+    padding-left: 0; 
+}
+.main, label{
+    padding-left: 2px!important;
+    margin:0;
+    
+}
+.form{    
+    margin-left:.6rem;
+}
+.main{
+    margin-bottom: .9rem;
+}
+
+.radio{
+    text-align:left;
+}
+.text{
+    height: 5rem;
+    max-width:99.5%; 
+    margin-left: .5rem;  
+}
+.select{
+    margin-left: -5px;
+}
+.info{
+    margin-top: 1rem;
+
+}

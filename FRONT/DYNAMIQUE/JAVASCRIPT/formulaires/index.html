@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nous contacter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h4>Vos coordonnées :</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h6 id="tete">
+            <span class="star"></span>Ces zones sont obligatoires
+          </h6>
+        </div>
+      </div>
+
+      <form action="http://bienvu.net/script.php" method="post" id="formulaire_contac">
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="société" class="col-lg-2">Société :</label>
+          <div class="col-lg-8">
+            <input type="text" id="societe" required />
+            <span class="star"></span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="personne" class="col-lg-2">Personne à contacter :</label>
+          <div class="col-lg-8">
+            <input type="text" id="personne" required />
+            <span class="star"></span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="adresse" class="col-lg-2 adresse"
+            >Adresse de l'entreprise :</label
+          >
+          <div class="col-lg-8">
+            <textarea
+              type="textarea"
+              id="adress"
+              rows="3"
+              style="overflow-y: scroll"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="cp" class="col-lg-2">Code postal :</label>
+          <div class="col-lg-8">
+            <input type="text" id="cp" required />
+            <span class="star"></span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="ville" class="col-lg-2">ville :</label>
+          <div class="col-lg-8">
+            <input type="text" id="ville" required />
+            <span class="star"></span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="email" class="col-lg-2">email :</label>
+          <div class="col-lg-8">
+            <input
+              type="text"
+              id="email"
+              required
+            />
+            <span class="star"></span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <label for="telephone" class="col-lg-2">Téléphone :</label>
+          <div class="col-lg-8">
+            <input type="text" id="telephone" required />
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-lg-1"></div>
+          <div class="col-xl-2 col-sm-3">
+            <label for="langage" class="langage">Sélectionnez</label><br />
+            <label for="langage" class="langage">l'environnement</label>
+            <label for="langage" class="langage">technique du projet :</label>
+            <select
+              class="form-select"
+              aria-label="Disabled select example"
+              id="select"
+            >
+              <option selected>Choisissez</option>
+              <option>Access</option>
+              <option>Java</option>
+              <option>C++</option>
+              <option>C#</option>
+              <option>React</option>
+              <option>Angular</option>
+              <option>Power Builder</option>
+              <option>Internet</option>
+              <option>Cloud</option>
+              <option>Linux</option>
+              <option>Windows</option>
+              <option>SQL</option>
+              <option>Oracle</option>
+              <option>Autres...</option>
+            </select>
+          </div>
+
+          <div class="col-lg-8">
+            <textarea
+              type="textarea"
+              id="langage"
+              rows="4"
+              style="overflow-y: scroll"
+              readonly="true"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-1">
+            <button class="btn btn-success">envoyer</button>
+          </div>
+          <div class="col-lg-8">
+            <input class= "btn btn-warning" type="reset" value="cancel">          
+          </div>
+        </div>
+
+        <!--
+            <label for="data">date de naissance*</label
+            ><input type="date" id="prenom" required /> <br />
+            <label for="cp">Code postal*</label
+            ><input
+              type="text"
+              id="cp"
+              required
+              pattern="([0-95][971-976])"
+            /><br />
+            <label for="adresse">Adresse*</label
+            ><input type="text" id="adresse" /><br />
+            <label for="ville">Ville*</label><input type="text" id="ville" /><br />
+            <label for="email">Email*</label><input type="email" id="email" /><br />
+
+            <label for="sujet">Sujet*</label
+            ><input type="text" id="nom" required /> -->
+      </form>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!-- <table style="text-align: center" minWidth="80px">       
+        <thead>
+          <tr>
+            <th>
+              <strong>Photo</strong>
+            </th>
+            <th>
+              <strong>Id</strong>
+            </th>
+            <th>
+              <strong>Catégorie</strong>
+            </th>
+            <th>
+              <strong>Libellé</strong>
+            </th>
+            <th>
+              <strong>Prix</strong>
+            </th>
+            <th>
+              <strong>couleur</strong>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="images/jarditou_photos/7.jpg"
+                alt="photo7"
+                height="70px"
+              />
+            </td>
+            <td>7</td>
+            <td>Barbecues</td>
+            <td>Aramis</td>
+            <td>110€</td>
+            <td>Brun</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="images/jarditou_photos/8.jpg"
+                alt="photo8"
+                height="70px"
+              />
+            </td>
+            <td>8</td>
+            <td>Barbecues</td>
+            <td>athos</td>
+            <td>249.99€</td>
+            <td>Noir</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="images/jarditou_photos/11.jpg"
+                alt="photo11"
+                height="70px"
+              />
+            </td>
+            <td>11</td>
+            <td>Barbecues</td>
+            <td>Clatronic</td>
+            <td>135.99€</td>
+            <td>chrome</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="images/jarditou_photos/12.jpg"
+                alt="photo12"
+                height="70px"
+              />
+            </td>
+            <td>12</td>
+            <td>Barbecues</td>
+            <td>Camping</td>
+            <td>88€</td>
+            <td>Noir</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="images/jarditou_photos/13.jpg"
+                alt="photo13"
+                height="70px"
+              />
+            </td>
+            <td>13</td>
+            <td>Brouettes</td>
+            <td>Green</td>
+            <td>49€</td>
+            <td>Verte</td>
+          </tr>
+        </tbody>
+      </table> -->

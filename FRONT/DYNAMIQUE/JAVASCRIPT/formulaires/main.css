@@ -1,0 +1,32 @@
+html{
+    padding:0;
+    margin:0;
+    width: 100%;
+}
+body{
+    padding:.5rem;
+}
+.row{
+    margin-bottom: .6rem;
+}
+#tete{
+    color:rgb(138, 5, 5);
+}
+label{
+    font-weight:bold;
+}
+.adresse{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.langage{
+    margin-bottom: 0;
+}
+.star{
+    color:rgb(255, 72, 0);
+    padding:.6rem;
+    vertical-align: top;
+}
+#dropdownMenu1{
+    margin-top:.7rem;
+}
