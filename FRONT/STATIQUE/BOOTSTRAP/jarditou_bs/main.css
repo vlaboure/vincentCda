@@ -16,11 +16,12 @@ body{
     padding: 10px;
 }
 .image{
-    width: 100%;
+    width: 93.5rem;
     height: auto;
     display: block;
 }
 .droite{
+
     background-color: orange;
 }
 td{

@@ -1,20 +1,20 @@
 from math import *
 from tkinter import*
-from PIL import Image,ImageTk
+# from PIL import Image,ImageTk
 
 import tkinter.font as tkFont
 
-# def affImage():
-#     direct=os.getcwd()+'\\fichiers\\'
-#     maFenetre = Tk()
-#     maFenetre.title(direct+"/image")
-#     maFenetre.geometry('300x200')
-#     load = Image.open('watch.png')
-#     photo = ImageTk.PhotoImage(load)
-#     label_image = Label(maFenetre,image=photo)
-#     label_image.place(x=0,y=0)
-#     maFenetre.mainloop()
-    
+def affImage():
+    direct=os.getcwd()+'\\fichiers\\'
+    maFenetre = Tk()
+    maFenetre.title(direct+"/image")
+    maFenetre.geometry('300x200')
+    load = Image.open('watch.png')
+    photo = ImageTk.PhotoImage(load)
+    label_image = Label(maFenetre,image=photo)
+    label_image.place(x=0,y=0)
+    maFenetre.mainloop()
+
 # saisie = Tk()
 # hei=200 // 5
 # left=20

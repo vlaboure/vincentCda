@@ -1,0 +1,12 @@
+chaud
+froid
+tempéré
+glacial
+brûlant
+
+Traduction anglaise : 
+hot
+cold
+moderate
+icy
+ardent

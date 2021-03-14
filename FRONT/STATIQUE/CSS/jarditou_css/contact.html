@@ -10,8 +10,11 @@
 </head>
 <body>
     <header>
-        <img src="images/jarditou_logo.jpg" alt="logo" height="100px"> 
-        <p>La qualité depuis 70 ans</p>
+      <div class="entete">
+        <img src="images/jarditou_logo.jpg" alt="logo" height="100px" class="present"> 
+        <h2 class="present">La qualité depuis 70 ans</h2>
+      </div>    
+      <section class="menu">
   
         <ul>
           <li>
@@ -19,40 +22,67 @@
           </li>
           
           <li>
-            <a href="tableau.html" target="_blank">Tableau</a>
+            <a href="tableau.html">Tableau</a>
           </li>
           
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="#">Contact</a>
           </li>
-        </ul>  
-        <img src="images/promotion.jpg" alt="logo" height="90%"> 
+        </ul>
+      </section>  
+      <img src="images/promotion.jpg" alt="logo" class="promotion"> 
   
-        <h1>Contact</h1>    
-        <hr size="small" width="90%" align="left" />
-      </header>
-      <p>*Ces zones sont obligatoires</p>
-      <form action="http://bienvu.net/script.php" method="post" id='formulaire_contact'>
-        <fieldset>
-            <legend>Vos coordonnées </legend>            
-            <label for="nom">Votre nom*</label><input type="text" id='nom' required><br>
-            <label for="prenom">Votre prénom*</label><input type="text" id='prenom' required><br>
-            <label for="sexe">Sexe*</label><input type="radio"name="sexe" checked>Femme 
-            <input type="radio"name="sexe">Homme <br>
-            <label for="data">date de naissance*</label><input type="date" id='prenom' required> <br>
-            <label for="cp">Code postal*</label><input type="text" id="cp" required pattern="([0-95][971-976])"><br>
-            <label for="adresse">Adresse*</label><input type="text" id='adresse' ><br>
-            <label for="ville">Ville*</label><input type="text" id="ville" ><br>
-            <label for="email">Email*</label><input type="email" id="email" ><br>            
-        </fieldset>
-        <fieldset>
-            <legend>Votre demande</legend>
-                <label for="sujet">Sujet*</label><input type="text" id='nom' required><br>
+      <h1 class="out">Contact</h1>    
 
-        </fieldset>
-        <fieldset>
-            <legend>votre demande</legend>
-        </fieldset>
+    </header>
+
+    <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact" >
+      <p class="out">*Ces zones sont obligatoires</p>
+      <fieldset>
+        <legend><strong> Vos coordonnées</strong> </legend>  
+        <label for="name" class="name">Votre nom*</label>
+        <input type="text" id='name' required>
+        <label for="firstName" class="first-name">Prénom</label>
+        <input id="firstName" type="text">
+        <label for="sexe">Sexe*</label>
+        <input type="radio"name="sexe"class="sexe"value="Femme" checked>Femme       
+        <input type="radio"name="sexe" class="sexe"value="Homme">Homme
+        <label for="date" class="date">date de naissance*</label>
+        <input type="date" id='date' required>
+        <label for="cp"class="cp">Code postal</label>
+        <input type="text" id="cp" required>
+        <label for="adresse" class="adresse">Adresse*</label>
+        <input type="text" id='adresse'>
+        <label for="ville"class="ville">Ville*</label>
+        <input type="text" id="ville" >
+        <label for="email"class="email">Email*</label>
+        <input type="email" id="email" >                               
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><strong>Votre demande</strong></legend>
+        <label for="sujet"class="sujet">Sujet*</label>
+        <select name="sujet" id="sujet">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+        <label for="choix"class="choix">Sujet*</label>
+        <textarea name="choix" rows="5" cols="40" id="choix"></textarea>
+      </fieldset>
+      <div class="out">
+        <label for="avert"class="avert">J'accepte le traitement informatique de ce formulaire*</label>
+        <input type="checkbox" id="avert" >
+        <div style="padding:3rem;">
+          <button>Valider</button>
+          <button type="reset">Annuler</button>
+        </div>
+      </div>
+
     </form>
 </body>
 </html>

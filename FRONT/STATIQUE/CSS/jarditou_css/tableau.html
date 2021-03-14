@@ -10,30 +10,34 @@
   </head>
   <body>
     <header>
-      <img src="images/jarditou_logo.jpg" alt="logo" height="100px"> 
-      <p>La qualité depuis 70 ans</p>
-
-      <ul>
-        <li>
-          <a href="index.html">Accueil</a>
-        </li>
-        
-        <li>
-          <a href="" >Tableau</a>
-        </li>
-        
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>  
-
+      <div class="entete">
+        <img src="images/jarditou_logo.jpg" alt="logo" height="100px" class="present"> 
+        <h2 class="present">La qualité depuis 70 ans</h2>
+      </div>
+      
+      <section class="menu">
+        <ul>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          
+          <li>
+            <a href="" >Tableau</a>
+          </li>
+          
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>    
+      </section>
+          
+      <img src="images/promotion.jpg" alt="logo"class="promotion"> 
     </header>
-    <div class="container">
-      <img src="images/promotion.jpg" alt="logo" height="90%"> 
+
       <hr size="small" width="90%" align="left" />
       <h2>Tableau</h2>
       <hr size="small" width="40%" align="left" />
-      <table style="text-align: center" minWidth="80px">
+      <table style="text-align: center">
         <!-- <caption>Tableau</caption> -->
         <thead>
           <tr>
@@ -41,7 +45,7 @@
               <strong>Photo</strong>
             </th>
             <th>
-              <strong>Id</strong>
+              <strong class="sml">Id</strong>
             </th>
             <th>
               <strong>Catégorie</strong>
@@ -50,7 +54,7 @@
               <strong>Libellé</strong>
             </th>
             <th>
-              <strong>Prix</strong>
+              <strong class="sml">Prix</strong>
             </th>
             <th>
               <strong>couleur</strong>
@@ -72,7 +76,7 @@
             <td>110€</td>
             <td>Brun</td>
           </tr>
-          <tr>
+          <tr class="yellow">
             <td>
               <img
                 src="images/jarditou_photos/8.jpg"
@@ -100,7 +104,7 @@
             <td>135.99€</td>
             <td>chrome</td>
           </tr>
-          <tr>
+          <tr class="yellow">
             <td>
               <img
                 src="images/jarditou_photos/12.jpg"
@@ -130,6 +134,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
+   
   </body>
 </html>
